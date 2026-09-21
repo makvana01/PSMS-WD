@@ -7,7 +7,7 @@
     "seed": "npm run seed --prefix server",
     "server": "npm run start --prefix server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\""
+    "dev": "node api.js && concurrently \"npm run dev --prefix server\" \"npm start --prefix client\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
