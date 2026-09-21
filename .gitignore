@@ -1,0 +1,63 @@
+# ==========================================
+# Placement Management System (PSMS-WD)
+# .gitignore
+# ==========================================
+
+# --- Progress Reports & Academic Documentation ---
+# (User specified: Do not track PDFs, docx, or report generation assets)
+*.pdf
+*.docx
+PROGRESS_REPORTS_VIEWER.html
+PROJECT_DOCUMENTATION_PDF.html
+/*.html
+doc_images/
+assets/
+scratch/
+
+# --- Python Scripts & Inspection Utilities ---
+*.py
+*.pyc
+__pycache__/
+
+# --- Node & Dependencies ---
+node_modules/
+/node_modules
+client/node_modules/
+server/node_modules/
+.pnp
+.pnp.js
+
+# --- Environment & Secret Variables ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+client/.env
+
+# --- Production & Build Outputs ---
+/build
+client/build/
+client/dist/
+dist/
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# --- User Uploads (Keep directory structure via .gitkeep, ignore files) ---
+server/uploads/*
+server/uploads/**/*
+!server/uploads/id-cards/
+!server/uploads/profile-pics/
+!server/uploads/resumes/
+!server/uploads/**/.gitkeep
+
+# --- IDE & OS metadata ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
